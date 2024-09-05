@@ -1,23 +1,25 @@
-/*  
-    Attention recruiters or anyone that might be viewing this,
-    obviously I'd gitignore this file, but this app is for exhibition purposes
-*/
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// https://console.firebase.google.com/u/0/project/chat-rooms-daf8d/database/firestore/data~2F
-const config = {
-    apiKey: "AIzaSyDVREeTWwRZi2357hAxMQMaO5rGqzl8lKw",
-    authDomain: "chat-rooms-daf8d.firebaseapp.com",
-    databaseURL: "https://chat-rooms-daf8d.firebaseio.com",
-    projectId: "chat-rooms-daf8d",
-    storageBucket: "chat-rooms-daf8d.appspot.com",
-    messagingSenderId: "72412532819",
-    appId: "1:72412532819:web:856140823dc7e28df1b6a6",
-    measurementId: "G-DPND3KNEZW"
-}
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAs8K80O09NBoqMn80o3LK2krrIfFRwuGE",
+  authDomain: "szaby-516b8.firebaseapp.com",
+  databaseURL: "https://szaby-516b8-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "szaby-516b8",
+  storageBucket: "szaby-516b8.appspot.com",
+  messagingSenderId: "62570315847",
+  appId: "1:62570315847:web:b644494aff25ffa4157162",
+  measurementId: "G-PZ7707S3HV"
+};
 
 // Initialize Firebase
-firebase.initializeApp(config)
-const db = firebase.firestore()
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Password for the private chat room
 const privateRoomPassword = 'DamnTrainCJ!69'
